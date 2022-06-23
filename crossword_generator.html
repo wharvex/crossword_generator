@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="crossword_generator.css">
+  <title>Crossword Puzzle Maker</title>
+</head>
+
+<body>
+  <header>
+    <h1>Crossword Puzzle Maker</h1>
+    <h3>First ADD at least two words (or choose a pre-made word bank), then click MATCHES, then click ORGANIZE</h3>
+  </header>
+  <div id=panels>
+    <div id="panel1" class="panel">
+      <div>
+        <h3>Add your own words</h3>
+        <form>
+          <input type="text" name="answer" id="answer">
+          <button>Add</button>
+        </form>
+      </div>
+      <div>
+        <h3>Pre-made word banks</h3>
+        <div id="wordBanksButtons" class="buttonRow">
+          <button id="colorsButton">Colors(17)</button>
+          <button id="vegetablesButton">Vegetables(16)</button>
+          <button id="birdsButton">Birds(20)</button>
+        </div>
+      </div>
+      <div>
+        <h3>Find matches and organize tables</h3>
+        <div id="matchOrgButtons" class="buttonRow">
+          <button id="matchesButton">Matches</button>
+          <button id="organizeButton">Organize</button>
+        </div>
+      </div>
+    </div>
+    <div id="wordBankBox" class="panel">
+      <h3>Word Bank</h3>
+      <table id="wordBankDisplay"></table>
+    </div>
+    <div id="panel2" class="panel">
+      <h3>Matches</h3>
+      <div id="matchesBox"></div>
+    </div>
+  </div>
+  <div id="tableBox">
+  </div>
+  <script src="crossword_generator.js"></script>
+</body>
+
+</html>
